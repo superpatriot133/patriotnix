@@ -1,11 +1,11 @@
 cd /tmp
 
-wget https://download.max.ru/electron/MAX.deb
+wget --no-check-certificate https://download.max.ru/electron/MAX.deb
 
-sudo apt install ./MAX.deb
+sudo apt install -y ./MAX.deb
 
-wget https://raw.githubusercontent.com/superpatriot133/patriotnix/refs/heads/main/shaman.jpg
+wget --no-check-certificate https://raw.githubusercontent.com/superpatriot133/patriotnix/refs/heads/main/shaman.jpg
 
-sudo apt-get update && sudo apt-get install xwallpaper
+sudo apt-get -y update && sudo apt-get install -y xwallpaper
 
 xwallpaper --tile shaman.jpg
